@@ -1,0 +1,16 @@
+#Git CheatSheet
+
+#clone your project to make a directory
+git clone <link>
+
+#puts all directories/files to the staging area
+git add .
+
+#commits the changes in the staging area with a comment
+git commit -m "<comment>"
+
+#pushes all changes to the master
+git push
+
+#shows you any changes made
+git status
