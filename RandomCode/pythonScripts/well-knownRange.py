@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#https://www.pythonforbeginners.com/code-snippets-source-code/port-scanner-in-python/
+
 import socket
 import subprocess
 import sys
@@ -29,7 +31,7 @@ print ("*" *60)
 t1 = datetime.now()
 
 #make an array of ips from input 
-remoteServerIPs = ([str(ip) for ip in ipaddress.IPv4Network(ipNetwork)])
+remoteServerIPs = ([str(ip) for ip in ipaddress.IPv4Network(ipNetwork, False).hosts()])
 
 #Using the range function to specify ports (here it will scan all ports between 1 and 1024)
 #Error Handling Added

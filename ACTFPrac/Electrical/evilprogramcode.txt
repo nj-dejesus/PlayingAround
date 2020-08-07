@@ -1,0 +1,10 @@
+# Author: Lucius Cornelius Sulla
+# Note to fellow bad guys: Americans are stupid.
+# This devastating piece of malware counts down from 10 to 0 over and over, forever.
+# Their systems won't be able to do anything.
+# Denial of service, LOL!!
+
+START:	MVI A	???
+LOOP:	DCR A
+	???	START
+	JMP	LOOP
